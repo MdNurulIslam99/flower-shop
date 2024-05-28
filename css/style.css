@@ -21,24 +21,44 @@ button {
     padding: 15px 30px;
 }
 
-/* header style */
-header {
-    background: rgba(229, 84, 115, 0.10);
-}
-
 .container {
     width: 75%;
     max-width: 1440px;
     margin: 0 auto;
+
 }
+
+.section-heading {
+    max-width: 500px;
+    text-align: center;
+    margin: 20px auto;
+}
+
+.section-heading h2 {
+    color: #272727;
+    text-align: center;
+    font-size: 40px;
+    font-weight: 800;
+    margin-bottom: 20px;
+}
+
+/* header style */
+header,
+#hot-deal {
+    background: rgba(229, 84, 115, 0.10);
+}
+
+
 .banner {
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
-.banner .banner-text *{
+
+.banner .banner-text * {
     margin-bottom: 30px;
-    max-width: 525px;  /* image er width 700 er 75% = 525 px */
+    max-width: 525px;
+    /* image er width 700 er 75% = 525 px */
 }
 
 .banner .banner-text h1 {
@@ -47,7 +67,167 @@ header {
     font-weight: 800;
 }
 
-.banner .banner-img img{
+.banner .banner-img img {
     width: 100%;
-    vertical-align: middle; /* img ta inline e koto tuku korbe content ta jeno gap na take niche */
+    vertical-align: middle;
+    /* img ta inline e koto tuku korbe content ta jeno gap na take niche */
+}
+
+/* featured style */
+#featured {
+    padding: 100px 0;
+}
+
+.section-content {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    align-items: end;
+    padding: 20px;
+}
+
+.section-content .flower .flower-img {
+    border-radius: 300px 300px 0px 0px;
+    padding: 30px 15px 0;
+    height: 500px;
+    display: flex;
+    align-items: end;
+
+}
+
+.section-content .flower .flower-img img {
+    width: 100%;
+
+}
+
+.section-content .flower .pink {
+    background: rgba(167, 33, 98, 0.15);
+}
+
+.section-content .flower .blue {
+    background: rgba(5, 151, 160, 0.15);
+}
+
+.section-content .flower .green {
+    background: rgba(71, 125, 17, 0.15);
+}
+
+.section-content .flower p {
+    color: #272727;
+    text-align: center;
+    margin-top: 16px;
+    font-size: 20px;
+    font-weight: 700;
+    text-decoration-line: underline;
+}
+
+/* delivery style */
+
+.delivery-info {
+    border-radius: 8px;
+    background: rgba(39, 39, 39, 0.05);
+}
+
+.delivery-container {
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
+    padding: 50px;
+    margin-bottom: 30px;
+}
+
+.delivery-container .delivery-img img {
+    height: 70px;
+    width: 70px;
+}
+
+/* hot-deal style */
+#hot-deal .hot-deal-main {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 80px 0;
+}
+
+#hot-deal .hot-deal-main .hot-deal-text {
+    width: 75%;
+    max-width: 550px;
+    text-align: center;
+
+}
+#hot-deal .hot-deal-main .hot-deal-text *{
+    margin-bottom: 24px;
+}
+
+#hot-deal .hot-deal-main .hot-deal-text h1 {
+    color: #272727;
+    font-size: 40px;
+    font-weight: 800;
+}
+#hot-deal .hot-deal-main .hot-deal-text h1 .important{
+    color: #E55473;
+}
+
+#hot-deal .hot-deal-img {
+ max-width: 318px;
+}
+
+/* Get The Latest Deals style */
+
+#newsletter{
+    margin: 128px 0;
+}
+.newsletter-main{
+    background-image: url('../images/Rectangle.png');
+    padding: 122px 0;
+}
+#newsletter form{
+    max-width: 800px;
+    margin: 20px auto;
+    display: flex;
+    gap: 10px;
+   
+}
+
+#newsletter form input{
+ flex-grow: 1;
+ border: none;
+ border-radius: 3px;
+ padding: 10px;
+ font-size: 18px;
+ outline: 1px solid green;
+}
+
+/* flower style */
+
+.flower-content{
+    display: flex;
+    justify-content:space-evenly;
+    gap: 20px;
+    margin-top: 30px;
+}
+
+.flower-content .flower-img  img{
+    height: 300px;
+    width: 250px;
+}
+
+/* footer style */
+
+.footer-container{
+    background-color: black;
+    padding: 100px;
+}
+
+.footer-container .footer-info .footer-title{
+    color: #E55473;
+}
+
+.footer-container .footer-info .footer-title-shop{
+    color: #FFF;
+}
+
+.footer-container .footer-info .footer-details{
+    color: rgba(255, 255, 255, 0.90);
+    font-size: 14px;
 }
